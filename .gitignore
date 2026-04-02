@@ -1,1 +1,5 @@
 .env
+raw/
+data/
+*.jsonl
+data-ingestion/json-data/**/*.json
