@@ -2,4 +2,4 @@
 raw/
 data/
 *.jsonl
-data-ingestion/json-data/*.json
+data-ingestion/json-data/**/*.json
