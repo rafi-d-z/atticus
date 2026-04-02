@@ -7,14 +7,14 @@ Full phase breakdown and task checklist for the [NYC Government Transparency Too
 ### Phase 01 — Data ingestion (Weeks 1–2)
 
 **API sources**
-- [ ] Fetch `/bodies` → build committee lookup table
-- [ ] Fetch `/persons` → build council member lookup table
-- [ ] Paginate `/matters` → save one JSON file per matter to raw store
+- [x] Fetch `/bodies` → build committee lookup table
+- [x] Fetch `/persons` → build council member lookup table
+- [x] Paginate `/matters` → save one JSON file per matter to raw store
 - [ ] Per matter: fetch `/matters/{id}/texts` → append bill text to body
 - [ ] Per matter: fetch `/matters/{id}/attachments` → download PDFs via `/file` endpoint
 - [ ] Per matter: fetch `/matters/{id}/histories` → action timeline
 - [ ] Per matter: fetch `/matters/{id}/sponsors` → sponsor list
-- [ ] Paginate `/events` → save raw event records
+- [x] Paginate `/events` → save raw event records
 - [ ] Per event: fetch `/events/{id}/eventitems?AgendaNote=1&MinutesNote=1`
 - [ ] NYC Open Data (Socrata) — contracts, permits, payroll via `sodapy`
 - [ ] Checkbook NYC API — spending and budget via XML POST
