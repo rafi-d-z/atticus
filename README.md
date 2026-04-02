@@ -135,14 +135,14 @@ The `body` field is synthesized from: full legislative text + title + committee 
 ### Phase 01 — Data ingestion (Weeks 1–2)
 
 **API sources**
-- [ ] Fetch `/bodies` → build committee lookup table
-- [ ] Fetch `/persons` → build council member lookup table
-- [ ] Paginate `/matters` → save one JSON file per matter to raw store
+- [X] Fetch `/bodies` → build committee lookup table
+- [X] Fetch `/persons` → build council member lookup table
+- [X] Paginate `/matters` → save one JSON file per matter to raw store
 - [ ] Per matter: fetch `/matters/{id}/texts` → append bill text to body
 - [ ] Per matter: fetch `/matters/{id}/attachments` → download PDFs via `/file` endpoint
 - [ ] Per matter: fetch `/matters/{id}/histories` → action timeline
 - [ ] Per matter: fetch `/matters/{id}/sponsors` → sponsor list
-- [ ] Paginate `/events` → save raw event records
+- [X] Paginate `/events` → save raw event records
 - [ ] Per event: fetch `/events/{id}/eventitems?AgendaNote=1&MinutesNote=1`
 - [ ] NYC Open Data (Socrata) — contracts, permits, payroll via `sodapy`
 - [ ] Checkbook NYC API — spending and budget via XML POST
